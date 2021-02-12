@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portafolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<section>
+		<h2>Menú despeglabe</h2>
+	</section>
+	<div class="toggle"></div>
+	<section class="navigation">
+		<span style="--i:0;"></span>
+		<span style="--i:1;"></span>
+		<span style="--i:2;"></span>
+		<span style="--i:3;"></span>
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Sobre mi</a></li>
+			<li><a href="#">Portafolio</a></li>
+			<li><a href="#">Equipo</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</section>
+	
+	<script>
+		const navigation = document.querySelector('.navigation');
+		document.querySelector('.toggle').onclick = function() {
+			this.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
